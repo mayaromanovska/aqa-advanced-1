@@ -9,12 +9,12 @@ const ADULT_AGE = 18;
 let age;
 let isAdult;
 
-age = "35";
+age = 35;
 isAdult = age > ADULT_AGE;
 console.log("Age: " + age);
 console.log("Adult: " + isAdult);
 
-age = "14";
+age = 14;
 isAdult = age > ADULT_AGE;
 console.log("Age: " + age);
 console.log("Adult: " + isAdult);

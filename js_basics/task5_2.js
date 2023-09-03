@@ -8,13 +8,9 @@
 Округліть кожне отримане значення до 2 значень після крапки
 */
 
-let rectangleLength;
-let rectangleWidth;
-let rectangleSquare;
-
-rectangleLength = 5.55;
-rectangleWidth = 4.44;
-rectangleSquare = (rectangleLength * rectangleWidth).toFixed(2);
+let rectangleLength = 5.55;
+let rectangleWidth = 4.44;
+let rectangleSquare = (rectangleLength * rectangleWidth).toFixed(2);
 console.log(rectangleSquare);
 
 rectangleLength = 1.23;

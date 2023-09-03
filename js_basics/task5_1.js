@@ -9,11 +9,8 @@
 Округліть кожне отримане значення до 2 значень після крапки
 */
 
-let circleRadius; 
-let circleSquare;
-
-circleRadius = 5;
-circleSquare = (Math.PI * Math.pow(circleRadius, 2)).toFixed(2);
+let circleRadius = 5;
+let circleSquare = (Math.PI * Math.pow(circleRadius, 2)).toFixed(2);
 console.log(circleSquare);
 
 circleRadius = 10;
