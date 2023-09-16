@@ -13,12 +13,10 @@ function divide(numerator, denominator){
     if (typeof numerator !== "number" || typeof denominator !== "number"){
       throw new Error ("Invalid numerator or denominator are entered. They should be numbers.");
     }
-    else if(denominator === 0){
+    if(denominator === 0){
       throw new Error ("Invalid denominator entered. Denominator cannot be zero.");
     } 
-    else{
-      return `Result: ${numerator / denominator}`;     
-  }
+    return numerator / denominator;     
   } catch(err){
     console.log("Error: ", err.message);
   } finally {
@@ -26,6 +24,6 @@ function divide(numerator, denominator){
   }
 }
 
-console.log(divide(4,2));
-console.log(divide(4,0));
-console.log(divide("a",2));
+console.log(`Result: ${divide(4,2)}`);
+console.log(`Result: ${divide(4,0)}`);
+console.log(`Result: ${divide(4,'b')}`);

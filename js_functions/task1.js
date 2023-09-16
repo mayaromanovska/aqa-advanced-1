@@ -7,20 +7,20 @@
 */
 
 // Function Declaration
-function calculateRectangleSquare(width, height) {
+function calculateRectangleSquare1(width, height) {
   return width * height;
 }
 
-console.log(calculateRectangleSquare(5, 10));
+console.log(calculateRectangleSquare1(5, 10));
 
 // Function Expression
-const RectangleSquare1 = function(width, height) {
+const calculateRectangleSquare2 = function(width, height) {
   return width * height;
   };
 
-console.log(RectangleSquare1(5, 10));
+console.log(calculateRectangleSquare2(5, 10));
 
 // Arrow Function
-const RectangleSquare2 = (width, height) => width * height;
+const calculateRectangleSquare3 = (width, height) => width * height;
 
-console.log(RectangleSquare2(5, 10));
+console.log(calculateRectangleSquare3(5, 10));
