@@ -9,26 +9,23 @@
 */
 
 function divide(numerator, denominator){
-  try{
-    if (typeof numerator !== 'number' || typeof denominator !== 'number'){
+  try {
+    if (typeof numerator !== "number" || typeof denominator !== "number"){
       throw new Error ("Invalid numerator or denominator are entered. They should be numbers.");
     }
     else if(denominator === 0){
       throw new Error ("Invalid denominator entered. Denominator cannot be zero.");
     } 
-    else {
-    // тут спочатку зробила з return `Result: ${numerator / denominator}`, але в цьому випадку
-    // в консоль спочатку пише "Робота завершена.", а потiм вже результат виконання від ділення
-      console.log(`Result: ${numerator / denominator}`); 
-    
+    else{
+      return `Result: ${numerator / denominator}`;     
   }
-  }catch(err){
+  } catch(err){
     console.log("Error: ", err.message);
-  }finally {
+  } finally {
     console.log("Робота завершена.");
   }
 }
 
-divide(4,2);
-divide(4,0);
-divide("a",2);
+console.log(divide(4,2));
+console.log(divide(4,0));
+console.log(divide("a",2));
