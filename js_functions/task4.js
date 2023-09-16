@@ -13,7 +13,7 @@ function divide(numerator, denominator){
     if (typeof numerator !== 'number' || typeof denominator !== 'number'){
       throw new Error ("Invalid numerator or denominator are entered. They should be numbers.");
     }
-    if(denominator === 0){
+    else if(denominator === 0){
       throw new Error ("Invalid denominator entered. Denominator cannot be zero.");
     } 
     else {
