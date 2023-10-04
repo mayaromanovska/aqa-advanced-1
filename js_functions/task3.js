@@ -7,12 +7,12 @@
 Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник.
 */
 
-const countDown = num => {  
-  if (num < 1){
+const countDown = (num) => {
+  if (num < 1) {
     return;
   }
   console.log(num);
   countDown(num - 1);
-}
+};
 
 countDown(5);

@@ -11,14 +11,14 @@ const num = 5;
 
 console.log("loop for");
 
-for (let i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++) {
   console.log(`${num} * ${i} = ${num * i}`);
 }
 
 console.log("\nloop while");
 
 let j = 1;
-while (j <= 10){
+while (j <= 10) {
   console.log(`${num} * ${j} = ${num * j}`);
   j++;
 }

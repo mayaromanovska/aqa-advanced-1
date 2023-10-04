@@ -8,22 +8,22 @@
 Викличте функцію divide з різними значеннями numerator і denominator, включаючи випадок, коли denominator дорівнює 0 або один з аргументів не є числом.
 */
 
-function divide(numerator, denominator){
+function divide(numerator, denominator) {
   try {
-    if (typeof numerator !== "number" || typeof denominator !== "number"){
-      throw new Error ("Invalid numerator or denominator are entered. They should be numbers.");
+    if (typeof numerator !== "number" || typeof denominator !== "number") {
+      throw new Error("Invalid numerator or denominator are entered. They should be numbers.");
     }
-    if(denominator === 0){
-      throw new Error ("Invalid denominator entered. Denominator cannot be zero.");
-    } 
-    return numerator / denominator;     
-  } catch(err){
+    if (denominator === 0) {
+      throw new Error("Invalid denominator entered. Denominator cannot be zero.");
+    }
+    return numerator / denominator;
+  } catch (err) {
     console.log("Error: ", err.message);
   } finally {
     console.log("Робота завершена.");
   }
 }
 
-console.log(`Result: ${divide(4,2)}`);
-console.log(`Result: ${divide(4,0)}`);
-console.log(`Result: ${divide(4,'b')}`);
+console.log(`Result: ${divide(4, 2)}`);
+console.log(`Result: ${divide(4, 0)}`);
+console.log(`Result: ${divide(4, "b")}`);

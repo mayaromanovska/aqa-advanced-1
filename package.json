@@ -1,0 +1,16 @@
+{
+  "name": "aqa-advanced-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maya Romanovska",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-google": "^0.14.0",
+    "prettier": "3.0.3"
+  }
+}

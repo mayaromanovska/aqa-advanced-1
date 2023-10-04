@@ -8,7 +8,7 @@
 let namePerson1 = "Anna";
 let namePerson2 = "Sofia";
 let greeting = "Hello " + namePerson1 + " and " + namePerson2 + "!";
-console.log(greeting); 
+console.log(greeting);
 
 namePerson1 = "Ivan";
 namePerson2 = "Maria";
