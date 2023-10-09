@@ -7,7 +7,7 @@
 const averageGrade = 95;
 
 switch (true) {
-  case averageGrade >= 0 && averageGrade < 60: 
+  case averageGrade >= 0 && averageGrade < 60:
     console.log("Незадовільно");
     break;
   case averageGrade >= 60 && averageGrade <= 70:
@@ -22,6 +22,6 @@ switch (true) {
   case averageGrade >= 91 && averageGrade <= 100:
     console.log("Відмінно");
     break;
-  default: 
+  default:
     console.log("Invalid value entered. Value should be a number from 1 to 100.");
-  }
+}

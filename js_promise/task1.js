@@ -1,6 +1,6 @@
 /* Завдання 1 */
 
-function printWithDelay(text, ms){
+function printWithDelay(text, ms) {
   setTimeout(() => {
     console.log(text);
   }, ms);

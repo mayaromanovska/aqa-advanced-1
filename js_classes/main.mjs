@@ -1,12 +1,12 @@
-import {Book}  from "./Book.mjs"
-import {EBook}  from "./EBook.mjs"
+import {Book} from "./Book.mjs";
+import {EBook} from "./EBook.mjs";
 
 const book1 = new Book("title1", "author1", 2001);
 book1.printInfo();
 const book2 = new Book("title2", "author2", 2002);
 book2.printInfo();
 
-//get 
+//get
 console.log("Current title: " + book1.title);
 //set
 book1.title = "title11";
@@ -24,7 +24,7 @@ book1.year = 2024;
 const ebook1 = new EBook("title3", "author3", 2003, "pdf");
 ebook1.printInfo();
 
-//get 
+//get
 console.log(`Current format: ${ebook1.fileFormat}`);
 //set
 ebook1.fileFormat = "epub";
@@ -37,7 +37,6 @@ ebook1.fileFormat = "doc";
 const arrayBooks = [book1, book2, ebook1];
 const oldestBook = Book.getOldestBook(arrayBooks);
 console.log("Oldest book is: ");
-oldestBook.printInfo(); 
+oldestBook.printInfo();
 console.log("Ebook from Book is: ");
 console.log(EBook.getEBookFromBook(book1, "epub"));
-

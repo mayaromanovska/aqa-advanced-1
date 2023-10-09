@@ -1,5 +1,5 @@
 /* Завдання 6: Сортування масивів
-*/
+ */
 
 const numbersList = [1, 10, 14, 2, 4, 5, 43, 34];
 const newArray = numbersList.slice(0);

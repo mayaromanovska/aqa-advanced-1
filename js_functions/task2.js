@@ -8,10 +8,9 @@
 
 const ADULT_AGE = 18;
 
-function defineIsAdult(age){
+function defineIsAdult(age) {
   return age >= ADULT_AGE;
 }
 
 console.log(defineIsAdult(25));
 console.log(defineIsAdult(15));
-

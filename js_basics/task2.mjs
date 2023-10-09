@@ -1,5 +1,5 @@
 "use strict";
-import chalk from 'chalk';
+import chalk from "chalk";
 
 /*Завдання 2: Встановлення залежностей та їх використання
 

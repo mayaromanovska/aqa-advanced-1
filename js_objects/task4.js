@@ -3,8 +3,8 @@
 const person = {
   firstName: "Maya",
   lastName: "Romanovska",
-  age: 35,
-}
+  age: 35
+};
 
 person.email = "maiia.romanovska@gmail.com";
 delete person.age;

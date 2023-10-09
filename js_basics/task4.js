@@ -7,7 +7,7 @@
 
 const ADULT_AGE = 18;
 let age = 35;
-let isAdult = age > ADULT_AGE;;
+let isAdult = age > ADULT_AGE;
 
 console.log("Age: " + age);
 console.log("Adult: " + isAdult);

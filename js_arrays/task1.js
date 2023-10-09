@@ -3,21 +3,19 @@
 */
 
 const numbers = [2, -5, 0, 7, -3, 0, 10, -8];
-  let positiveCount = 0;
-  let negativeCount = 0;
-  let zeroCount = 0;
-  
-function countPosNegNullNumbers(numbers){
-  for(const number of numbers){
-    if (number > 0){
+let positiveCount = 0;
+let negativeCount = 0;
+let zeroCount = 0;
+
+function countPosNegNullNumbers(numbers) {
+  for (const number of numbers) {
+    if (number > 0) {
       positiveCount++;
-    }
-    else if (number < 0){
+    } else if (number < 0) {
       negativeCount++;
-    }
-    else {
+    } else {
       zeroCount++;
-    }    
+    }
   }
   console.log(`Кількість позитивних чисел: ${positiveCount}`);
   console.log(`Кількість негативних чисел: ${negativeCount}`);

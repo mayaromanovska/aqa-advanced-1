@@ -6,12 +6,12 @@ export class Book {
     this._author = author;
     this._year = year;
   }
-  
+
   get title() {
     return this._title;
   }
-   
-  get author() {    
+
+  get author() {
     return this._author;
   }
 
@@ -20,15 +20,15 @@ export class Book {
   }
 
   set title(title) {
-    if (typeof title !== "string" || title.length < 2){
+    if (typeof title !== "string" || title.length < 2) {
       console.log("Incorect title");
       return;
     }
     this._title = title;
   }
-   
+
   set author(author) {
-    if (typeof author !== "string" || author.length < 2){
+    if (typeof author !== "string" || author.length < 2) {
       console.log("Incorect author");
       return;
     }
@@ -36,7 +36,7 @@ export class Book {
   }
 
   set year(year) {
-    if (typeof year !== "number" || year <= 0 || year > 2023){
+    if (typeof year !== "number" || year <= 0 || year > 2023) {
       console.log("Incorect year");
       return;
     }
@@ -44,12 +44,11 @@ export class Book {
   }
 
   printInfo() {
-    console.log (`Title: ${this._title}; Author: ${this._author}; Year: ${this._year};`);
+    console.log(`Title: ${this._title}; Author: ${this._author}; Year: ${this._year};`);
   }
 
-  static getOldestBook(books){
-    const oldestBook = books.reduce((book1, book2) => book1.year < book2.year ? book1 : book2);
+  static getOldestBook(books) {
+    const oldestBook = books.reduce((book1, book2) => (book1.year < book2.year ? book1 : book2));
     return oldestBook;
   }
 }
- 

@@ -14,9 +14,9 @@ function calculateRectangleSquare1(width, height) {
 console.log(calculateRectangleSquare1(5, 10));
 
 // Function Expression
-const calculateRectangleSquare2 = function(width, height) {
+const calculateRectangleSquare2 = function (width, height) {
   return width * height;
-  };
+};
 
 console.log(calculateRectangleSquare2(5, 10));
 
